@@ -11,7 +11,59 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="box_picture">
 
+        </div>
+        <div class="box_form">
+            <div class="text">
+                This is not a real online service! You know you need something like this in your life to
+                help you realize your deepest dreams. Sign up <em>now</em> to get started.
+            </div>
+            <div class="text">
+                You <em>know</em> you want to.
+            </div>
+            <form>
+                <legend>Let's do this!</legend>
+
+                <div>
+                    <label for="name">first name</label>
+                    <input type="text" id="name" name="first_name" placeholder="Nikita" autofocus required>
+                    <p class="help">*Please, enter a valid first name!</p>
+                </div>
+
+                <div>
+                    <label for="last_name">last name</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Pechen">
+                    <p class="help">*Please, enter a valid last name!</p>
+                </div>
+
+                <div>
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" required>
+                    <p class="help">*Please, enter a valid email address!</p>
+                </div>
+
+                <div>
+                    <label for="tel">phone number</label>
+                    <input type="tel" id="tel" name="tel" required>
+                    <p class="help">*Please, enter a valid phone number!</p>
+                </div>
+
+                <div class="pwd">
+                    <label for="pwd1">password</label>
+                    <input type="password" id="pwd1" name="pwd" required>
+                    <p class="help">*Please, enter a valid password!</p>
+                    <p class="help_pwd">*Passwords do not mutch</p>
+
+                    <label for="pwd2">confirm password</label>
+                    <input type="password" id="pwd2" name="pwd" required>
+                </div>
+
+                <button>Create Account</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
