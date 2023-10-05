@@ -7,14 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/14eb71cf09.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="box_picture">
 
+            <div class="logo_box">
+                <a href="#"><img src="./img/horse-logo-512x512.png" alt="Horse Logo" class="logo_icon"></a>
+                <div class="logo_text">horse</div>
+            </div>
+
+            <div class="thanksto">
+                Photo by&nbsp;<a
+                    href="https://unsplash.com/@karsten116?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Karsten
+                    Winegeart</a>&nbsp;on&nbsp;<a
+                    href="https://unsplash.com/photos/a-black-and-white-photo-of-a-horse-behind-a-fence-69A2flFrGpk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+            </div>
+
         </div>
+
         <div class="box_form">
             <div class="text">
                 This is not a real online service! You know you need something like this in your life to
@@ -23,45 +39,57 @@
             <div class="text">
                 You <em>know</em> you want to.
             </div>
-            <form>
+            <form class="form" id="my-form">
                 <legend>Let's do this!</legend>
 
-                <div>
-                    <label for="name">first name</label>
-                    <input type="text" id="name" name="first_name" placeholder="Nikita" autofocus required>
-                    <p class="help">*Please, enter a valid first name!</p>
-                </div>
+                <div class="form_container">
+                    <div class="form_box left">
+                        <div class="form_c">
+                            <label for="name">first name</label>
+                            <input type="text" id="name" name="first_name" placeholder="Nikita" required>
+                            <p class="help">*Please, enter a valid first name!</p>
+                        </div>
 
-                <div>
-                    <label for="last_name">last name</label>
-                    <input type="text" id="last_name" name="last_name" placeholder="Pechen">
-                    <p class="help">*Please, enter a valid last name!</p>
-                </div>
+                        <div class="form_c">
+                            <label for="email">email</label>
+                            <input type="email" id="email" name="email" required>
+                            <p class="help">*Please, enter a valid email address!</p>
+                        </div>
 
-                <div>
-                    <label for="email">email</label>
-                    <input type="email" id="email" name="email" required>
-                    <p class="help">*Please, enter a valid email address!</p>
-                </div>
+                        <div class="form_c pwd">
+                            <label for="pwd1">password</label>
+                            <input type="password" id="pwd1" name="pwd" required>
+                            <p class="help">*Please, enter a valid password!</p>
+                            <p class="help_pwd">*Passwords do not mutch</p>
+                        </div>
+                    </div>
 
-                <div>
-                    <label for="tel">phone number</label>
-                    <input type="tel" id="tel" name="tel" required>
-                    <p class="help">*Please, enter a valid phone number!</p>
-                </div>
+                    <div class="form_box right">
 
-                <div class="pwd">
-                    <label for="pwd1">password</label>
-                    <input type="password" id="pwd1" name="pwd" required>
-                    <p class="help">*Please, enter a valid password!</p>
-                    <p class="help_pwd">*Passwords do not mutch</p>
+                        <div class="form_c">
+                            <label for="last_name">last name</label>
+                            <input type="text" id="last_name" name="last_name" placeholder="Pechen" required>
+                            <p class="help">*Please, enter a valid last name!</p>
+                        </div>
 
-                    <label for="pwd2">confirm password</label>
-                    <input type="password" id="pwd2" name="pwd" required>
+                        <div class="form_c">
+                            <label for="phone">phone number</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                placeholder="063-xxx-xxxx" required>
+                            <p class="help">*Please, enter a valid phone number!</p>
+                        </div>
+                        <div class="form_c pwd">
+                            <label for="pwd2">confirm password</label>
+                            <input type="password" id="pwd2" name="pwd" required>
+                            <p class="help">*Please, enter a valid password!</p>
+                        </div>
+                    </div>
                 </div>
 
                 <button>Create Account</button>
             </form>
+
+            <div class="text login">Already have an account? <a href="#">Log in</a></div>
         </div>
     </div>
 </body>
